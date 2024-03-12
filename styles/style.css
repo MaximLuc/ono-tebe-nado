@@ -1,1 +1,248 @@
 /* место для вашего кода */
+
+
+
+
+/* шапка сайта */
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 92px 24px;
+    background-color: whitesmoke;
+}   
+.header__menu {
+    display: flex;
+    grid-column: 1;
+    list-style: circle;
+    gap: 32px;
+    font-size: 18px;
+}
+
+.header__links-list-item_no-bullit{
+    list-style: none;
+}
+
+.header__logo{
+    grid-column: 2;
+    width: 128px;
+    
+}
+.address{
+    width: 240px;
+    align-items: center;
+    grid-column: 3;
+}
+.address > a{
+    display: inline;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+.address > p{
+    word-wrap: break-word;
+}
+/* ОНО ТЕБЕ НАДО секция  */
+
+
+
+.cover{
+    position: relative;
+    padding: 165px 50px 50px ;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.6);
+    z-index:-1;
+}
+.cover__title{
+    color: white;
+    text-transform:uppercase;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+}
+.aligned-text{
+    display: block;
+}
+
+.aligned-text_centered{
+    text-align: center;
+}
+
+.aligned-text_right{
+    text-align: right;
+}
+
+.letter-spacing-extended{
+    letter-spacing: 0.6em;
+}
+.no-letter-spacing{
+    letter-spacing: 0em;
+}
+
+.cover__description{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 165px;
+}
+.cover__description-text{
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 0.8em;
+    padding-left: 22px;
+    
+}
+
+.bet-button{
+    border: 1px solid white;
+    padding: 12px 32px;
+    color: white;
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: inline;
+    margin-left: 100px;
+    
+    
+}
+
+/* секция Лоты */
+.lots{
+
+    padding:180px 24px 1px 24px;
+    height: 874px;
+}
+
+
+.lots__heading{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 28px 40px;
+}
+
+.lots__card-list{
+    display: flex;
+    gap: 25px;
+
+}
+.lots__card-list-item{
+    flex-grow: 1;
+    display: flex;
+}
+.card{
+    width: 334px;
+    height: 564px;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    padding-bottom:48px ;
+    
+}
+
+.card_type_film{
+    position: relative;
+    background-image: url(../images/card-lot-01.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+    justify-content:space-between;
+}
+
+.card_type_book{
+    position: relative;
+    background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+    justify-content: center;
+}
+
+.card_type_picture{
+    position: relative;
+    background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+    justify-content:space-between;
+}
+.card__title{
+    font-size: 22px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding: 50px 40px 0 40px;
+}
+
+.card__text{
+    font-size: 20px;
+    line-height: 120%;
+    padding: 0  40px 0 40px;
+}
+
+.lots__look-more-link{
+    display: block;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: 'Raleway';
+    font-style: normal;
+    margin: 30px 0 0 40px;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+/* Секция  О нас  */
+.about{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    padding:144px 24px ;
+
+}
+
+.about__logo{
+    background-color: black;
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    margin:34px 46px ;
+}
+.about__logo-image{
+    margin: 64px 45px;
+    text-align: center;
+    width: 62%;
+}
+
+.about__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.01em; 
+}
+.about__column-text{
+    display: flex;
+    flex-direction:column;
+    justify-content:end;
+}
+.about__text_paragraf-1{
+    padding-top: 100px;
+    width:688;
+}
+.about__text_paragraf-2{
+    width:693;
+}
