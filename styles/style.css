@@ -35,7 +35,7 @@
   align-items: center;
   line-height: 24px;
   font-size: 18px;
-  font-family: "Raleway",Arial, sans-serif;;
+  font-family: "Raleway",Arial, sans-serif;
   font-style: normal;
   letter-spacing: 0.01em;
   justify-items:flex-end;
@@ -198,7 +198,9 @@
 .card__title {
   font-size: 22px;
   line-height: 120%;
-  text-decoration-line: underline; 
+  
+  text-decoration-line: underline;
+
   text-transform: uppercase;
   padding: 50px 40px 0 40px;
 }
